@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import theme from "./utils/theme";
+import { AppRouter } from "./routes";
+import { Box } from "@mui/system";
 
-function App() {
+const customTheme = createTheme(theme);
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={customTheme}>
+      <Box sx={{ background: "#f6f8f9 " }}>
+        <AppRouter />
+      </Box>
+    </ThemeProvider>
   );
 }
-
-export default App;
