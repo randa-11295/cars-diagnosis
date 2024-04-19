@@ -1,7 +1,7 @@
 import Drawer from "@mui/material/Drawer";
 import ContentNav from "./ContentNav";
 
-const SideNav = (props) => {
+const MobDrawerSideBar = (props) => {
 
   return (
  
@@ -30,4 +30,4 @@ const SideNav = (props) => {
   );
 };
 
-export default SideNav;
+export default MobDrawerSideBar  ;
