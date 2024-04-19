@@ -1,14 +1,10 @@
-import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import ContentNav from "./ContentNav";
 
 const SideNav = (props) => {
 
   return (
-    <Box
-      component="nav"
-      sx={{ width: { md: props.drawerWidth }, flexShrink: { md: 0 } }}
-    >
+ 
       <Drawer
         variant="temporary"
         anchor={"left"}
@@ -22,28 +18,15 @@ const SideNav = (props) => {
           display: { xs: "block", md: "none" },
           "& .MuiDrawer-paper": {
             boxSizing: "border-box",
-            width: props.drawerWidth,
+            width: 240,
           },
         }}
       >
         <ContentNav mob  openHandel={props.openHandel}/>
       </Drawer>
 
-      <Drawer
-        variant="permanent"
-        anchor={"left"}
-        sx={{
-          display: { xs: "none", md: "block" },
-          "& .MuiDrawer-paper": {
-            boxSizing: "border-box",
-            width: props.drawerWidth,
-          },
-        }}
-        open
-      >
-        <ContentNav />
-      </Drawer>
-    </Box>
+    
+  
   );
 };
 

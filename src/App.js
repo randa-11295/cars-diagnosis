@@ -12,7 +12,6 @@ export default function App() {
         sx={{
           bgcolor: "colors.background",
           color: "colors.text",
-          minHeight: "100vh",
         }}
       >
         <AppRouter />
