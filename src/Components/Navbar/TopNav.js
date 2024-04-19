@@ -1,8 +1,5 @@
-import Stack from "@mui/material/Stack";
-import IconButton from "@mui/material/IconButton";
+import {Stack, IconButton ,Typography} from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import MenuNav from "../Navbar/MenuNav";
 import { useEffect, useState } from "react";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
@@ -16,11 +13,6 @@ const TopNav = (props) => {
   const [name, ] = useState(<PersonOutlineIcon />);
   const [route, setRoute] = useState("");
 
-
-
-
-
- 
 
   useEffect(() => {
     const newRoute = location.pathname.slice(1).split("/")[1]?.replaceAll("-" ,"");
