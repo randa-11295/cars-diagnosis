@@ -5,7 +5,7 @@ import {
   Navigate,
 } from "react-router-dom";
 import HomePage from "../Pages/Home";
-
+import Introduction from "../Pages/Introduction";
 
 export const AppRouter = () => {
 
@@ -14,7 +14,7 @@ export const AppRouter = () => {
     <Router>
       <Routes>
         <Route path="" element={<HomePage />}>
-          <Route path="/" element={<p> this site </p>} />
+          <Route path="/" element={<Introduction />} />
           {/* <Route path="/:area" element={<Platform />} />
           <Route
             path="/:area/Keys"
