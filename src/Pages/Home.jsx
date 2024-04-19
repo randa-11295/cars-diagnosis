@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Box, Grid, Stack } from "@mui/material";
+import { Box, Stack } from "@mui/material";
 import TopNav from "../Components/Navbar/TopNav";
 import SideNav from "../Components/Navbar/SideNav";
 import { Outlet } from "react-router-dom";
@@ -12,34 +12,33 @@ function Home() {
   };
 
   return (
-    <Stack sx={{ height: "100vh", padding: "20px 40px", background: "blue" }}>
-      <div> toooooop </div>
-      {/* <TopNav openHandel={openHandel} drawerWidth={drawerWidth} /> */}
+    <Stack spacing={2} sx={{ height: "100vh", p: 2 }}>
+      <TopNav openHandel={openHandel} />
 
-      {/* <SideNav openHandel={openHandel} mobileOpen={mobileOpen} /> */}
-
-      <Grid container spacing={3} sx={{ flexGrow: 1 }}>
-        <Grid
-          item
-          xs={0}
-          md={4}
-          lg={3}
-          xl={2}
+      <Stack direction="row" spacing={2} sx={{ flexGrow: 1 }}>
+        <Box
           sx={{
             // m: 3,
-            borderRadius: "10px",
-            background: "green",
+            width: { md: "30%", lg: "20%", xl: " 15%" },
+            borderRadius: 2,
+            bgcolor: "primary.background",
+            p: 2,
             display: { xs: "none", md: "block" },
           }}
         >
           teeestttt
           {/* <ContentNav /> */}
-        </Grid>
+        </Box>
 
-        <Grid item xs={12} md={8} lg={9} xl={10}>
+        <Box
+          sx={{
+            width: { md: "70%", lg: "80%", xl: " 85%" },
+            p: 2,
+          }}
+        >
           <Outlet />
-        </Grid>
-      </Grid>
+        </Box>
+      </Stack>
     </Stack>
   );
 }

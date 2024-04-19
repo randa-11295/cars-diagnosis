@@ -1,4 +1,4 @@
-import AppBar from "@mui/material/AppBar";
+import Stack from "@mui/material/Stack";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
@@ -35,16 +35,11 @@ const TopNav = (props) => {
 
   }, [location.pathname]);
 
-  const navStyle = {
-    width: { md: `calc(100% - ${props.drawerWidth}px)` },
-    m: "auto",
-  
-    // color: { md: "#000" },
-  };
+
 
   return (
-    <AppBar position="fixed" color="secondary" sx={navStyle}>
-      <Toolbar>
+   
+      <Stack  alignItems="center" direction="row"  sx={{bgcolor : "primary.background" ,    borderRadius: 2,px: 2}}>
         <IconButton
           color="inherit"
           aria-label="open drawer"
@@ -62,8 +57,8 @@ const TopNav = (props) => {
           {route}
         </Typography>
         <MenuNav name={name} />
-      </Toolbar>
-    </AppBar>
+      </Stack>
+   
   );
 };
 
