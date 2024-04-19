@@ -38,8 +38,8 @@ const TopNav = (props) => {
   const navStyle = {
     width: { md: `calc(100% - ${props.drawerWidth}px)` },
     m: "auto",
-    background: { md: "#fff" },
-    color: { md: "#000" },
+  
+    // color: { md: "#000" },
   };
 
   return (

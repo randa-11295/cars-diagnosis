@@ -35,14 +35,14 @@ const ContentNav = (props) => {
 
 
   const listStyle = (url, path) => {
-    return {
-      background: isSelectedCheck(url, path) ? "white" : "inherit",
-      color: isSelectedCheck(url, path) ? "secondary.main" : "inherit",
-    };
+    // return {
+    //    background: isSelectedCheck(url, path) ? "black" : "inherit",
+    //    color: isSelectedCheck(url, path) ? "secondary.main" : "inherit",
+    // };
   };
 
   const iconStyle = (url, path) => ({
-    color: isSelectedCheck(url, path) ? "secondary.main" : "white",
+    // color: isSelectedCheck(url, path) ? "secondary.main" : "black",
   });
 
   return (
@@ -84,13 +84,12 @@ const logoStyle = {
   backgroundSize: "contain",
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center",
-  backgroundColor: "#fff",
+
   cursor: "pointer",
 };
 
 const boxStyle = {
-  bgcolor: "secondary.main",
-  color: "#fff",
+
   height: "100vh",
   overflow: "auto",
 };

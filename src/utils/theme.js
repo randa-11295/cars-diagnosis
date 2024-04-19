@@ -1,28 +1,22 @@
-
 const theme = {
   palette: {
+    mode: "dark",
     typography: {
       fontFamily: "sans-serif",
     },
-  
+    colors: {
+      text: "#fff",
+      background: "#1E1D2B",
+    },
     primary: {
-      main: "#16aa9d",
-      contrastText: "#fff",
+      dark: "#602E3D",
+      main: "#FF6247",
+      background: "#252736",
     },
 
     secondary: {
-      main: "#004d5c",
-      contrastText: "#fff",
-    },
-
-    default: {
-      main: "#f6f8f9",
-      contrastText: "#000",
-    },
-
-    info: {
-      main: "#16aa9d",
-      contrastText: "#fff",
+      main: "#048784",
+      dark: " #3A565F",
     },
   },
 };

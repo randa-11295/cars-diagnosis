@@ -8,7 +8,13 @@ const customTheme = createTheme(theme);
 export default function App() {
   return (
     <ThemeProvider theme={customTheme}>
-      <Box sx={{ background: "#f6f8f9 " }}>
+      <Box
+        sx={{
+          bgcolor: "colors.background",
+          color: "colors.text",
+          minHeight: "100vh",
+        }}
+      >
         <AppRouter />
       </Box>
     </ThemeProvider>
