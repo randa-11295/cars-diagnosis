@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import HomePage from "../Pages/Home";
 import Introduction from "../Pages/Introduction";
+import Details from "../Pages/Details";
 
 export const AppRouter = () => {
 
@@ -15,6 +16,7 @@ export const AppRouter = () => {
       <Routes>
         <Route path="" element={<HomePage />}>
           <Route path="/" element={<Introduction />} />
+          <Route path="/details" element={<Details />} />
           {/* <Route path="/:area" element={<Platform />} />
           <Route
             path="/:area/Keys"

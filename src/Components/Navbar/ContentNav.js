@@ -50,7 +50,7 @@ const ContentNav = (props) => {
       <Toolbar sx={logoStyle} onClick={() => changeRouteHandel("")}></Toolbar>
 
       <List sx={{ pt: "1px" }}>
-        {["test"].map((el) => (
+        {[{url : "details"}].map((el) => (
           <ListItem
             sx={listStyle(el.url, location.pathname)}
             key={el.url}
