@@ -43,6 +43,7 @@ function Home() {
               width: { md: "70%", lg: "80%", xl: " 85%" },
               maxHeight: "100%",
               overflowY: "auto",
+              pr: 2,
             }}
           >
             <Outlet />
