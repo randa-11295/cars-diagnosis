@@ -10,7 +10,7 @@ export default function App() {
     <ThemeProvider theme={customTheme}>
       <Box
         sx={{
-          bgcolor: "colors.background",
+          bgcolor: "colors.bgColor",
           color: "colors.text",
         }}
       >

@@ -31,7 +31,7 @@ const TopNav = (props) => {
 
   return (
    
-      <Stack  alignItems="center" direction="row"  sx={{bgcolor : "primary.background" ,    borderRadius: 2,px: 2}}>
+      <Stack  alignItems="center" direction="row"  sx={{bgcolor : "primary.bgColor" ,    borderRadius: 2,px: 2}}>
         <IconButton
           color="inherit"
           aria-label="open drawer"

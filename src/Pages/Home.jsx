@@ -17,14 +17,20 @@ function Home() {
       <Stack spacing={2} sx={{ height: "100vh", p: 2 }}>
         <TopNav openHandel={openHandel} />
 
-        <Stack direction="row" spacing={2} sx={{ flexGrow: 1 }}>
+        <Stack
+          direction="row"
+          spacing={2}
+          sx={{ flexGrow: 1, maxHeight: "100%", overflowY: "hidden" }}
+        >
           <Box
             sx={{
               // m: 3,
               width: { md: "30%", lg: "20%", xl: " 15%" },
               borderRadius: 2,
-              bgcolor: "primary.background",
+              bgcolor: "primary.bgColor",
               p: 2,
+              maxHeight: "100%",
+              overflowY: "auto",
               display: { xs: "none", md: "block" },
             }}
           >
@@ -35,7 +41,8 @@ function Home() {
           <Box
             sx={{
               width: { md: "70%", lg: "80%", xl: " 85%" },
-              p: 2,
+              maxHeight: "100%",
+              overflowY: "auto",
             }}
           >
             <Outlet />

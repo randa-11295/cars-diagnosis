@@ -6,12 +6,12 @@ const theme = {
     },
     colors: {
       text: "#fff",
-      background: "#1E1D2B",
+      bgColor: "#1E1D2B",
     },
     primary: {
       dark: "#602E3D",
       main: "#FF6247",
-      background: "#252736",
+      bgColor: "#252736",
     },
 
     secondary: {
