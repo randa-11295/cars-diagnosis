@@ -1,31 +1,20 @@
-import * as React from "react";
-import Box from "@mui/material/Box";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
+import { Box, Stack, Typography } from "@mui/material";
 
 export default function SensorValsCard() {
   return (
-    <Card sx={{ borderRadius: 2, bgcolor: "primary.bgColor", p: 2 }}>
-      <CardContent>
-        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          Word of the Day
+    <Box sx={{ borderRadius: 2, bgcolor: "primary.bgColor", p: 2 }}>
+      <Typography sx={{ fontSize: 14 }} gutterBottom>
+        Reading
+      </Typography>
+      <Stack direction="row">
+        <Typography
+          component="h2"
+          sx={{ fontSize: "2rem", color: "primary.main" }}
+        >
+          50%
         </Typography>
 
-        <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          adjective
-        </Typography>
-        <Typography variant="body2">
-          well meaning and kindly.
-          <br />
-          {'"a benevolent smile"'}
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
+      </Stack>
+    </Box>
   );
 }
